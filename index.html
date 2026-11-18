@@ -105,10 +105,10 @@
       <div class="panel-row"><span class="panel-key">university</span><span class="panel-val">NEU <span class="panel-dim">(DSEB)</span></span></div>
       <div class="panel-row"><span class="panel-key">cumulative_gpa</span><span class="panel-val count-up" data-from="3.0" data-to="3.82" data-dec="2" data-suffix="/4.0">3.82<span class="panel-dim">/4.0</span></span></div>
       <div class="panel-row"><span class="panel-key">english_ielts</span><span class="panel-val count-up" data-from="4.0" data-to="6.5" data-dec="1">6.5</span></div>
-      <div class="panel-row"><span class="panel-key">fraud_pr_auc</span><span class="panel-val ok count-up" data-from="0.500" data-to="0.852" data-dec="3">0.852</span></div>
-      <div class="panel-row"><span class="panel-key">fraud_roc_auc</span><span class="panel-val ok count-up" data-from="0.800" data-to="0.994" data-dec="3">0.994</span></div>
-      <div class="panel-row"><span class="panel-key">solar_ad_auroc</span><span class="panel-val ok count-up" data-from="0.750" data-to="0.999" data-dec="3">0.999</span></div>
-      <div class="panel-row"><span class="panel-key">seller_ltv_pr_auc</span><span class="panel-val ok count-up" data-from="0.600" data-to="0.906" data-dec="3">0.906</span></div>
+      <div class="panel-row"><span class="panel-key">fraud_pr_auc</span><span class="panel-val ok">0.852</span></div>
+      <div class="panel-row"><span class="panel-key">fraud_roc_auc</span><span class="panel-val ok">0.994</span></div>
+      <div class="panel-row"><span class="panel-key">seller_ltv_pr_auc</span><span class="panel-val ok">0.906</span></div>
+      <div class="panel-row"><span class="panel-key">seller_lift_at_10</span><span class="panel-val ok">2.00×</span></div>
       <div class="panel-row blink"><span class="panel-key">status</span><span class="panel-val ok">READY_FOR_DEPLOY</span></div>
     </div>
   </div>
@@ -120,12 +120,12 @@
 <section class="section" id="projects">
   <div class="section-head-row">
     <div class="section-head">
-      <span class="eyebrow mono">// 05 technical case studies</span>
+      <span class="eyebrow mono">// 04 technical case studies</span>
       <h2 class="section-title" data-i18n="proj_heading">Featured Projects</h2>
-      <p class="section-desc" data-i18n="proj_sub">End-to-end systems spanning production MLOps, Computer Vision (eKYC &amp; industrial anomaly detection), and probabilistic behavior modeling.</p>
+      <p class="section-desc" data-i18n="proj_sub">End-to-end systems spanning production MLOps, Computer Vision (eKYC face recognition), and probabilistic behavior &amp; time-series modeling.</p>
     </div>
     <div class="filter-tabs mono" role="tablist" aria-label="Filter projects">
-      <button class="filter-btn active" data-filter="all">All (5)</button>
+      <button class="filter-btn active" data-filter="all">All (4)</button>
       <button class="filter-btn" data-filter="mlops">MLOps &amp; FinTech</button>
       <button class="filter-btn" data-filter="cv">Computer Vision</button>
       <button class="filter-btn" data-filter="analytics">Forecasting &amp; LTV</button>
@@ -211,48 +211,9 @@
     </div>
   </article>
 
-  <!-- PROJECT 03: SOLAR CELL ANOMALY DETECTION -->
-  <article class="project" id="proj-solar" data-cat="cv">
-    <div class="project-index mono">03</div>
-    <div class="project-main">
-      <div class="project-top">
-        <div>
-          <span class="project-cat mono">Deep Learning · Unsupervised Computer Vision · 2026</span>
-          <h3 class="project-title">Solar Cell Anomaly Detection &amp; Segmentation</h3>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/dchwy/Solar-panel-anomaly-segmentation" target="_blank" rel="noopener" class="project-link mono">
-            GitHub Repo <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
-          </a>
-        </div>
-      </div>
-      <p class="project-desc" data-i18n="p3_desc">
-        Comparative study and PyTorch implementation of 5 unsupervised visual anomaly detection and localization paradigms on monocrystalline and polycrystalline solar cell imagery.
-      </p>
-
-      <div class="project-stats">
-        <div class="stat"><span class="stat-val">0.999</span><span class="stat-label mono">AUROC (PatchCore · Poly)</span></div>
-        <div class="stat"><span class="stat-val">0.999</span><span class="stat-label mono">F1-Score (Poly)</span></div>
-        <div class="stat"><span class="stat-val">0.969</span><span class="stat-label mono">AUROC (SeMaKNN · Mono)</span></div>
-        <div class="stat"><span class="stat-val">5 Models</span><span class="stat-label mono">PyTorch Benchmark</span></div>
-      </div>
-
-      <ul class="project-points">
-        <li data-i18n="p3_b1">Implemented 5 distinct architectures in PyTorch: Convolutional Autoencoder, GAN-based reconstruction, PaDiM (multivariate Gaussian on patch features), SeMaKNN, and PatchCoreLight.</li>
-        <li data-i18n="p3_b2">Built multi-scale feature extractors on pretrained Wide-ResNet50 and ResNet-18 backbones with k-Center Greedy coreset subsampling to compress memory banks while preserving anomaly sensitivity.</li>
-        <li data-i18n="p3_b3">Demonstrated that pretrained patch-embedding methods (PatchCore AUROC 0.999 on poly, SeMaKNN 0.969 on mono) substantially outperform reconstruction baselines (AE 0.805, GAN 0.668 on mono).</li>
-      </ul>
-
-      <div class="project-tags">
-        <span class="tag">PyTorch</span><span class="tag">torchvision</span><span class="tag">PatchCore</span><span class="tag">PaDiM</span>
-        <span class="tag">Autoencoder &amp; GAN</span><span class="tag">Wide-ResNet50</span><span class="tag">ResNet-18</span><span class="tag">Coreset Subsampling</span>
-      </div>
-    </div>
-  </article>
-
-  <!-- PROJECT 04: OLIST SELLER ANALYTICS -->
+  <!-- PROJECT 03: OLIST SELLER ANALYTICS -->
   <article class="project" id="proj-olist" data-cat="analytics">
-    <div class="project-index mono">04</div>
+    <div class="project-index mono">03</div>
     <div class="project-main">
       <div class="project-top">
         <div>
@@ -289,9 +250,9 @@
     </div>
   </article>
 
-  <!-- PROJECT 05: HANOI WEATHER FORECASTING & VN30 VOLATILITY -->
+  <!-- PROJECT 04: HANOI WEATHER FORECASTING & VN30 VOLATILITY -->
   <article class="project" id="proj-forecast" data-cat="analytics">
-    <div class="project-index mono">05</div>
+    <div class="project-index mono">04</div>
     <div class="project-main">
       <div class="project-top">
         <div>
@@ -363,19 +324,18 @@
 
     <div class="skill-card">
       <div class="skill-card-head">
-        <h3 class="skill-cat mono">02 / Deep Learning &amp; Vision</h3>
-        <span class="skill-badge mono">PyTorch &amp; ONNX</span>
+        <h3 class="skill-cat mono">02 / Computer Vision &amp; Inference</h3>
+        <span class="skill-badge mono">ONNX &amp; OpenCV</span>
       </div>
-      <p class="skill-summary">Face detection, 5-point alignment, biometric verification (eKYC), and unsupervised visual anomaly segmentation.</p>
+      <p class="skill-summary">Multi-scale face detection, 5-point landmark alignment, and biometric identity matching (eKYC pipelines).</p>
       <div class="skill-pills">
-        <span class="pill strong">PyTorch</span>
-        <span class="pill">torchvision</span>
         <span class="pill strong">ONNX Runtime</span>
         <span class="pill strong">OpenCV</span>
-        <span class="pill strong">SCRFD &amp; ArcFace</span>
-        <span class="pill">PatchCore &amp; PaDiM</span>
-        <span class="pill">Autoencoder / GAN</span>
-        <span class="pill">ResNet / Wide-ResNet</span>
+        <span class="pill strong">SCRFD (Detection)</span>
+        <span class="pill strong">ArcFace (ResNet-50)</span>
+        <span class="pill">5-Point Alignment</span>
+        <span class="pill">Cosine Similarity Search</span>
+        <span class="pill">NMS &amp; Anchor Decoding</span>
       </div>
     </div>
 
@@ -462,8 +422,8 @@
         <span class="about-stat-label mono">IELTS Academic</span>
       </div>
       <div class="about-stat">
-        <span class="about-stat-num">5+</span>
-        <span class="about-stat-label mono">End-to-End ML/CV Systems</span>
+        <span class="about-stat-num">4</span>
+        <span class="about-stat-label mono">Featured Projects</span>
       </div>
     </div>
   </div>
