@@ -148,7 +148,7 @@
         </div>
       </div>
       <p class="project-desc" data-i18n="p1_desc">
-        Production-grade fraud detection system covering behavioral feature engineering, multi-model benchmarking, automated hyperparameter tuning, containerized FastAPI serving, CI/CT/CD workflows on Kubernetes (GKE), and drift monitoring.
+        End-to-end fraud detection pipeline covering data preprocessing, behavioral feature engineering, SMOTE class balancing, multi-model benchmarking, Optuna tuning, threshold-based inference, and Dockerized MLflow experiment tracking.
       </p>
 
       <div class="project-stats">
@@ -159,16 +159,14 @@
       </div>
 
       <ul class="project-points">
-        <li data-i18n="p1_b1">Engineered transactional velocity, ratio, and temporal features; benchmarked Logistic Regression, XGBoost, LightGBM, and CatBoost on severely imbalanced data.</li>
-        <li data-i18n="p1_b2">Tracked experiments with MLflow, tuned LightGBM hyperparameters via Optuna, and calibrated the classification threshold to optimize precision–recall trade-offs.</li>
-        <li data-i18n="p1_b3">Packaged inference via FastAPI + Docker + Streamlit UI; automated CI, Continuous Training (CT), and Continuous Deployment (CD) to Google Kubernetes Engine (GKE) using GitHub Actions and DVC.</li>
-        <li data-i18n="p1_b4">Implemented real-time observability and data/prediction drift alerts with Evidently AI, Prometheus, and Grafana.</li>
+        <li data-i18n="p1_b1">Built the data preprocessing and behavioral feature engineering pipeline (transactional velocity, ratios, temporal features) integrated into a reproducible DVC workflow with a strict train/validation/test split.</li>
+        <li data-i18n="p1_b2">Implemented model selection and training across Logistic Regression, XGBoost, LightGBM, and CatBoost, addressing severe class imbalance with SMOTE and tracking runs in Dockerized MLflow.</li>
+        <li data-i18n="p1_b3">Engineered an Optuna hyperparameter tuning pipeline and threshold-based inference flow to optimize precision–recall trade-offs (0.852 PR-AUC, 0.994 ROC-AUC with LightGBM).</li>
       </ul>
 
       <div class="project-tags">
         <span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">XGBoost</span><span class="tag">Optuna</span>
-        <span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">DVC</span><span class="tag">MLflow</span>
-        <span class="tag">GitHub Actions</span><span class="tag">Kubernetes (GKE)</span><span class="tag">Evidently AI</span><span class="tag">Prometheus &amp; Grafana</span>
+        <span class="tag">SMOTE</span><span class="tag">DVC</span><span class="tag">MLflow</span><span class="tag">Docker</span>
       </div>
     </div>
   </article>
@@ -344,16 +342,14 @@
         <h3 class="skill-cat mono">03 / MLOps &amp; Backend Serving</h3>
         <span class="skill-badge mono">Production</span>
       </div>
-      <p class="skill-summary">RESTful model serving, reproducible data/model pipelines, container orchestration, and drift observability.</p>
+      <p class="skill-summary">RESTful model serving, reproducible data/model pipelines, experiment tracking, and containerized deployment.</p>
       <div class="skill-pills">
         <span class="pill strong">FastAPI</span>
         <span class="pill strong">Docker</span>
         <span class="pill strong">MLflow</span>
         <span class="pill strong">DVC</span>
-        <span class="pill">GitHub Actions (CI/CT/CD)</span>
-        <span class="pill">Kubernetes (GKE)</span>
-        <span class="pill">Evidently AI</span>
-        <span class="pill">Prometheus &amp; Grafana</span>
+        <span class="pill">GitHub Actions</span>
+        <span class="pill">OAuth2 / JWT</span>
       </div>
     </div>
 
