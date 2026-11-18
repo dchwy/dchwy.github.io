@@ -181,30 +181,29 @@
           <h3 class="project-title">Face Recognition Attendance System (SCRFD + ArcFace ONNX)</h3>
         </div>
         <div class="project-links">
-          <span class="project-link project-link-static mono">FastAPI + ONNX Backend</span>
+          <span class="project-link project-link-static mono">Model &amp; Database (Team Project)</span>
         </div>
       </div>
       <p class="project-desc" data-i18n="p2_desc">
-        End-to-end multi-face detection, landmark alignment, and identity matching backend built with ONNX Runtime, SCRFD, ArcFace (ResNet-50), FastAPI, and MySQL — closely mirroring real-world eKYC verification pipelines.
+        Face recognition modeling and relational database design for an automated classroom attendance system using SCRFD, ArcFace (ResNet-50 ONNX), OpenCV, and MySQL.
       </p>
 
       <div class="project-stats">
         <div class="stat"><span class="stat-val">512-d</span><span class="stat-label mono">L2 ArcFace Embedding</span></div>
         <div class="stat"><span class="stat-val">5-pt</span><span class="stat-label mono">Landmark Alignment</span></div>
-        <div class="stat"><span class="stat-val">ONNX</span><span class="stat-label mono">CUDA / CPU Runtime</span></div>
-        <div class="stat"><span class="stat-val">7 tables</span><span class="stat-label mono">MySQL Schema + JWT</span></div>
+        <div class="stat"><span class="stat-val">ONNX</span><span class="stat-label mono">SCRFD + ArcFace</span></div>
+        <div class="stat"><span class="stat-val">7 tables</span><span class="stat-label mono">MySQL Schema</span></div>
       </div>
 
       <ul class="project-points">
-        <li data-i18n="p2_b1">Implemented SCRFD multi-scale face detection (3 FPN strides: 8, 16, 32) with custom anchor decoding, NMS, and 5-point facial landmark extraction.</li>
-        <li data-i18n="p2_b2">Aligned detected faces via affine similarity transform (112×112) and extracted L2-normalized 512-d ArcFace embeddings matched against class galleries using cosine similarity.</li>
-        <li data-i18n="p2_b3">Engineered a FastAPI service with lifespan singleton model loading (CUDA/CPU fallback), per-class in-memory embedding cache, multi-image upload (including Apple HEIC fallback), and cross-frame student deduplication.</li>
-        <li data-i18n="p2_b4">Built CLI + REST enrollment pipelines (`/extract`, `/vision/identify`), OAuth2/JWT authentication with bcrypt, and a 7-table MySQL relational database.</li>
+        <li data-i18n="p2_b1">Co-developed the face recognition pipeline using SCRFD (multi-scale detection and 5-point facial landmark alignment) and ArcFace (ResNet-50 ONNX) to extract L2-normalized 512-d embeddings.</li>
+        <li data-i18n="p2_b2">Implemented embedding extraction scripts and cosine-similarity identity matching against per-class enrolled student galleries with a configurable similarity threshold.</li>
+        <li data-i18n="p2_b3">Designed and built the 7-table MySQL relational database schema managing users, teachers, classes, enrollments, student embeddings, and attendance records.</li>
       </ul>
 
       <div class="project-tags">
         <span class="tag">Python</span><span class="tag">ONNX Runtime</span><span class="tag">SCRFD</span><span class="tag">ArcFace (ResNet-50)</span>
-        <span class="tag">OpenCV</span><span class="tag">FastAPI</span><span class="tag">MySQL</span><span class="tag">JWT / OAuth2</span>
+        <span class="tag">OpenCV</span><span class="tag">MySQL</span>
       </div>
     </div>
   </article>
@@ -339,17 +338,16 @@
 
     <div class="skill-card">
       <div class="skill-card-head">
-        <h3 class="skill-cat mono">03 / MLOps &amp; Backend Serving</h3>
-        <span class="skill-badge mono">Production</span>
+        <h3 class="skill-cat mono">03 / MLOps &amp; Pipeline Tools</h3>
+        <span class="skill-badge mono">Workflow</span>
       </div>
-      <p class="skill-summary">RESTful model serving, reproducible data/model pipelines, experiment tracking, and containerized deployment.</p>
+      <p class="skill-summary">Reproducible data/model pipelines, experiment tracking, hyperparameter tuning, and containerized training environments.</p>
       <div class="skill-pills">
-        <span class="pill strong">FastAPI</span>
         <span class="pill strong">Docker</span>
         <span class="pill strong">MLflow</span>
         <span class="pill strong">DVC</span>
         <span class="pill">GitHub Actions</span>
-        <span class="pill">OAuth2 / JWT</span>
+        <span class="pill">Git / uv</span>
       </div>
     </div>
 
