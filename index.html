@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Do Cong Huy — Data Science Portfolio</title>
-<meta name="description" content="Do Cong Huy — Data Science student. MLOps, ML Engineering, Business Analytics, Computer Vision.">
+<title>Do Cong Huy — AI/ML Engineer &amp; Data Science Portfolio</title>
+<meta name="description" content="Do Cong Huy — Data Science student at NEU (GPA 3.82/4.0). Machine Learning, Computer Vision, MLOps, and Predictive Analytics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="grid-overlay" aria-hidden="true"></div>
+<div class="glow-orb orb-1" aria-hidden="true"></div>
+<div class="glow-orb orb-2" aria-hidden="true"></div>
 
 <!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#top" class="nav-logo">
       <span class="dot" aria-hidden="true"></span>
-      <span class="nav-logo-text">dchuy<span class="nav-logo-dim">.dev</span></span>
+      <span class="nav-logo-text">dchwy<span class="nav-logo-dim">.github.io</span></span>
     </a>
     <div class="nav-links">
-      <a href="#projects">projects</a>
-      <a href="#skills">skills</a>
-      <a href="#about">about</a>
-      <a href="#contact" class="nav-cta">contact</a>
+      <a href="#projects" data-i18n="nav_projects">projects</a>
+      <a href="#skills" data-i18n="nav_skills">skills</a>
+      <a href="#about" data-i18n="nav_about">education &amp; about</a>
+      <a href="#contact" class="nav-cta" data-i18n="nav_contact">contact</a>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="nav-controls">
+      <button class="ctrl-btn mono" id="langToggle" aria-label="Switch language" title="Switch EN / VI">EN</button>
+      <button class="ctrl-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle Dark / Light Mode">
+        <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
   <div class="nav-mobile" id="navMobile">
-    <a href="#projects">projects</a>
-    <a href="#skills">skills</a>
-    <a href="#about">about</a>
-    <a href="#contact">contact</a>
+    <a href="#projects" data-i18n="nav_projects">projects</a>
+    <a href="#skills" data-i18n="nav_skills">skills</a>
+    <a href="#about" data-i18n="nav_about">education &amp; about</a>
+    <a href="#contact" data-i18n="nav_contact">contact</a>
   </div>
 </nav>
 
 <!-- ============ HERO ============ -->
 <header class="hero" id="top">
   <div class="hero-inner">
-    <div class="hero-status">
-      <span class="status-dot" aria-hidden="true"></span>
-      <span class="mono">status: open_to_internship</span>
+    <div class="hero-badges">
+      <div class="hero-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="mono" data-i18n="hero_status">status: open_to_ai_ml_internship</span>
+      </div>
+      <span class="hero-role-badge mono">AI/ML Engineer · Data Science</span>
     </div>
 
     <h1 class="hero-title">
-      <span class="hero-line">Đỗ Công Huy</span>
-      <span class="hero-line hero-sub">builds systems that turn data into decisions.</span>
+      <span class="hero-line">Do Cong Huy</span>
+      <span class="hero-line hero-sub" data-i18n="hero_sub">building reliable ML, Computer Vision &amp; MLOps systems from notebook to production.</span>
     </h1>
 
-    <p class="hero-desc">
-      Sinh viên Data Science năm 3 tại NEU. Tập trung vào việc đưa mô hình machine learning từ notebook ra production —
-      qua các pipeline có giám sát, có CI/CD, và có thể tin cậy được.
+    <p class="hero-desc" data-i18n="hero_desc">
+      Third-year Data Science in Economics &amp; Business (DSEB) student at National Economics University (GPA 3.82/4.0). Focused on end-to-end machine learning pipelines, deep learning for visual inspection &amp; eKYC face recognition, and risk/fraud modeling.
     </p>
 
     <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">Xem dự án <span aria-hidden="true">→</span></a>
-      <a href="/assets/Do_Cong_Huy_CV.pdf" class="btn btn-ghost" download>Tải CV (PDF)</a>
+      <a href="#projects" class="btn btn-primary"><span data-i18n="hero_btn_projects">Explore Projects</span> <span aria-hidden="true">→</span></a>
+      <a href="assets/Do_Cong_Huy_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+        <span data-i18n="hero_btn_cv">Download CV (MIT Format PDF)</span>
+      </a>
     </div>
 
     <div class="hero-meta">
@@ -67,30 +81,35 @@
         <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
         github.com/dchwy
       </a>
-      <a href="mailto:dchuy.neu@gmail.com" class="meta-item">
+      <a href="mailto:huydocong1502@gmail.com" class="meta-item">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="1.5" y="3" width="13" height="10" rx="1.2"/><path d="M2 4l6 5 6-5"/></svg>
-        dchuy.neu@gmail.com
+        huydocong1502@gmail.com
+      </a>
+      <a href="tel:0868589541" class="meta-item">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.6 1.8h2.2l1.1 2.7-1.4 1.2a8.5 8.5 0 0 0 4.8 4.8l1.2-1.4 2.7 1.1v2.2a1.3 1.3 0 0 1-1.4 1.3A11.8 11.8 0 0 1 2.3 3.2 1.3 1.3 0 0 1 3.6 1.8z"/></svg>
+        0868 589 541
       </a>
       <span class="meta-item">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 1c-2.76 0-5 2.24-5 5 0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z"/><circle cx="8" cy="6" r="1.6"/></svg>
-        Hà Nội, Việt Nam
+        Ha Noi, Vietnam
       </span>
     </div>
   </div>
 
-  <div class="hero-panel" aria-hidden="true">
+  <div class="hero-panel" aria-label="Key metrics summary">
     <div class="panel-head">
       <span class="panel-dot red"></span><span class="panel-dot yellow"></span><span class="panel-dot green"></span>
-      <span class="panel-title mono">metrics.log</span>
+      <span class="panel-title mono">dchwy@neu:~/telemetry.json</span>
     </div>
     <div class="panel-body mono">
-      <div class="panel-row"><span class="panel-key">gpa</span><span class="panel-val">3.87<span class="panel-dim">/4.0</span></span></div>
-      <div class="panel-row"><span class="panel-key">fraud_pr_auc</span><span class="panel-val ok">0.852</span></div>
-      <div class="panel-row"><span class="panel-key">fraud_roc_auc</span><span class="panel-val ok">0.994</span></div>
-      <div class="panel-row"><span class="panel-key">seller_clv_pr_auc</span><span class="panel-val ok">0.906</span></div>
-      <div class="panel-row"><span class="panel-key">silhouette_score</span><span class="panel-val">0.5295</span></div>
-      <div class="panel-row"><span class="panel-key">sellers_segmented</span><span class="panel-val">2,248</span></div>
-      <div class="panel-row blink"><span class="panel-key">_</span><span class="panel-val"></span></div>
+      <div class="panel-row"><span class="panel-key">university</span><span class="panel-val">NEU <span class="panel-dim">(DSEB)</span></span></div>
+      <div class="panel-row"><span class="panel-key">cumulative_gpa</span><span class="panel-val count-up" data-from="3.0" data-to="3.82" data-dec="2" data-suffix="/4.0">3.82<span class="panel-dim">/4.0</span></span></div>
+      <div class="panel-row"><span class="panel-key">english_ielts</span><span class="panel-val count-up" data-from="4.0" data-to="6.5" data-dec="1">6.5</span></div>
+      <div class="panel-row"><span class="panel-key">fraud_pr_auc</span><span class="panel-val ok count-up" data-from="0.500" data-to="0.852" data-dec="3">0.852</span></div>
+      <div class="panel-row"><span class="panel-key">fraud_roc_auc</span><span class="panel-val ok count-up" data-from="0.800" data-to="0.994" data-dec="3">0.994</span></div>
+      <div class="panel-row"><span class="panel-key">solar_ad_auroc</span><span class="panel-val ok count-up" data-from="0.750" data-to="0.999" data-dec="3">0.999</span></div>
+      <div class="panel-row"><span class="panel-key">seller_ltv_pr_auc</span><span class="panel-val ok count-up" data-from="0.600" data-to="0.906" data-dec="3">0.906</span></div>
+      <div class="panel-row blink"><span class="panel-key">status</span><span class="panel-val ok">READY_FOR_DEPLOY</span></div>
     </div>
   </div>
 </header>
@@ -99,115 +118,217 @@
 
 <!-- ============ PROJECTS ============ -->
 <section class="section" id="projects">
-  <div class="section-head">
-    <span class="eyebrow mono">// 03 case studies</span>
-    <h2 class="section-title">Dự án</h2>
-    <p class="section-desc">Mỗi dự án giải quyết một bài toán khác nhau — từ vận hành ML production, đến phân tích kinh doanh định lượng, đến hệ thống thị giác máy tính thời gian thực.</p>
+  <div class="section-head-row">
+    <div class="section-head">
+      <span class="eyebrow mono">// 05 technical case studies</span>
+      <h2 class="section-title" data-i18n="proj_heading">Featured Projects</h2>
+      <p class="section-desc" data-i18n="proj_sub">End-to-end systems spanning production MLOps, Computer Vision (eKYC &amp; industrial anomaly detection), and probabilistic behavior modeling.</p>
+    </div>
+    <div class="filter-tabs mono" role="tablist" aria-label="Filter projects">
+      <button class="filter-btn active" data-filter="all">All (5)</button>
+      <button class="filter-btn" data-filter="mlops">MLOps &amp; FinTech</button>
+      <button class="filter-btn" data-filter="cv">Computer Vision</button>
+      <button class="filter-btn" data-filter="analytics">Forecasting &amp; LTV</button>
+    </div>
   </div>
 
-  <!-- PROJECT 01 -->
-  <article class="project" id="proj-mlops">
+  <!-- PROJECT 01: FRAUD DETECTION MLOPS -->
+  <article class="project" id="proj-mlops" data-cat="mlops">
     <div class="project-index mono">01</div>
     <div class="project-main">
       <div class="project-top">
-        <h3 class="project-title">Financial Fraud Detection — MLOps Pipeline</h3>
-        <a href="https://github.com/dchwy/mlops-project" target="_blank" rel="noopener" class="project-link">
-          repo <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
-        </a>
+        <div>
+          <span class="project-cat mono">MLOps · FinTech Risk &amp; Fraud · 2026</span>
+          <h3 class="project-title">Financial Fraud Detection — End-to-End MLOps Pipeline</h3>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/dchwy/Financial-Fraud-Detection-End-to-End-MLOps-Pipeline" target="_blank" rel="noopener" class="project-link mono">
+            GitHub Repo <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
+          </a>
+        </div>
       </div>
-      <p class="project-desc">
-        Pipeline phát hiện gian lận tài chính đầy đủ vòng đời: từ xử lý dữ liệu, huấn luyện mô hình, đến đóng gói container,
-        tự động hóa CI/CD và giám sát data/model drift theo thời gian thực.
+      <p class="project-desc" data-i18n="p1_desc">
+        Production-grade fraud detection system covering behavioral feature engineering, multi-model benchmarking, automated hyperparameter tuning, containerized FastAPI serving, CI/CT/CD workflows on Kubernetes (GKE), and drift monitoring.
       </p>
 
       <div class="project-stats">
-        <div class="stat"><span class="stat-val">0.852</span><span class="stat-label mono">PR-AUC</span></div>
+        <div class="stat"><span class="stat-val">0.852</span><span class="stat-label mono">PR-AUC (LightGBM)</span></div>
         <div class="stat"><span class="stat-val">0.994</span><span class="stat-label mono">ROC-AUC</span></div>
         <div class="stat"><span class="stat-val">0.801</span><span class="stat-label mono">Precision</span></div>
         <div class="stat"><span class="stat-val">0.752</span><span class="stat-label mono">Recall</span></div>
       </div>
 
       <ul class="project-points">
-        <li>DVC version hóa dữ liệu &amp; pipeline, đảm bảo mọi experiment đều reproducible end-to-end.</li>
-        <li>MLflow track toàn bộ thí nghiệm, Optuna tự động tìm siêu tham số tối ưu cho LightGBM.</li>
-        <li>FastAPI inference service, đóng gói Docker, triển khai lên GKE qua CI/CD/CT 3 workflow riêng biệt.</li>
-        <li>Evidently AI phát hiện data/model drift, Prometheus + Grafana dashboard giám sát theo thời gian thực.</li>
+        <li data-i18n="p1_b1">Engineered transactional velocity, ratio, and temporal features; benchmarked Logistic Regression, XGBoost, LightGBM, and CatBoost on severely imbalanced data.</li>
+        <li data-i18n="p1_b2">Tracked experiments with MLflow, tuned LightGBM hyperparameters via Optuna, and calibrated the classification threshold to optimize precision–recall trade-offs.</li>
+        <li data-i18n="p1_b3">Packaged inference via FastAPI + Docker + Streamlit UI; automated CI, Continuous Training (CT), and Continuous Deployment (CD) to Google Kubernetes Engine (GKE) using GitHub Actions and DVC.</li>
+        <li data-i18n="p1_b4">Implemented real-time observability and data/prediction drift alerts with Evidently AI, Prometheus, and Grafana.</li>
       </ul>
 
       <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">FastAPI</span>
-        <span class="tag">Docker</span><span class="tag">DVC</span><span class="tag">MLflow</span>
-        <span class="tag">Evidently AI</span><span class="tag">GKE</span><span class="tag">CI/CD</span>
+        <span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">XGBoost</span><span class="tag">Optuna</span>
+        <span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">DVC</span><span class="tag">MLflow</span>
+        <span class="tag">GitHub Actions</span><span class="tag">Kubernetes (GKE)</span><span class="tag">Evidently AI</span><span class="tag">Prometheus &amp; Grafana</span>
       </div>
     </div>
   </article>
 
-  <!-- PROJECT 02 -->
-  <article class="project" id="proj-olist">
+  <!-- PROJECT 02: FACE RECOGNITION ATTENDANCE -->
+  <article class="project" id="proj-face" data-cat="cv">
     <div class="project-index mono">02</div>
     <div class="project-main">
       <div class="project-top">
-        <h3 class="project-title">Marketing-Driven Data Unlock — Olist Seller Analytics</h3>
-        <a href="https://github.com/dchwy/marketing-driven-data-unlock" target="_blank" rel="noopener" class="project-link">
-          repo <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
-        </a>
+        <div>
+          <span class="project-cat mono">Computer Vision · Biometric / eKYC Pipeline · 2025</span>
+          <h3 class="project-title">Face Recognition Attendance System (SCRFD + ArcFace ONNX)</h3>
+        </div>
+        <div class="project-links">
+          <span class="project-link project-link-static mono">FastAPI + ONNX Backend</span>
+        </div>
       </div>
-      <p class="project-desc">
-        Framework phân tích người bán cho sàn TMĐT Olist: ước lượng giá trị vòng đời 60 ngày (LTV) và phân khúc người bán
-        để định hướng chiến lược marketing theo từng nhóm.
+      <p class="project-desc" data-i18n="p2_desc">
+        End-to-end multi-face detection, landmark alignment, and identity matching backend built with ONNX Runtime, SCRFD, ArcFace (ResNet-50), FastAPI, and MySQL — closely mirroring real-world eKYC verification pipelines.
       </p>
 
       <div class="project-stats">
-        <div class="stat"><span class="stat-val">0.906</span><span class="stat-label mono">PR-AUC</span></div>
-        <div class="stat"><span class="stat-val">2.00×</span><span class="stat-label mono">Lift@10</span></div>
-        <div class="stat"><span class="stat-val">2,248</span><span class="stat-label mono">sellers</span></div>
-        <div class="stat"><span class="stat-val">0.53</span><span class="stat-label mono">Silhouette</span></div>
+        <div class="stat"><span class="stat-val">512-d</span><span class="stat-label mono">L2 ArcFace Embedding</span></div>
+        <div class="stat"><span class="stat-val">5-pt</span><span class="stat-label mono">Landmark Alignment</span></div>
+        <div class="stat"><span class="stat-val">ONNX</span><span class="stat-label mono">CUDA / CPU Runtime</span></div>
+        <div class="stat"><span class="stat-val">7 tables</span><span class="stat-label mono">MySQL Schema + JWT</span></div>
       </div>
 
       <ul class="project-points">
-        <li>Áp dụng mô hình BG/NBD và Gamma-Gamma để dự đoán hành vi mua hàng và giá trị vòng đời người bán.</li>
-        <li>Xếp hạng độ hoạt động người bán đạt Lift@10 gấp đôi baseline ngẫu nhiên.</li>
-        <li>Phân khúc 2,248 người bán thành 3 nhóm chiến lược bằng K-means, Silhouette Score 0.53.</li>
-        <li>Trực quan hóa kết quả trên Power BI cho đội ngũ marketing ra quyết định.</li>
+        <li data-i18n="p2_b1">Implemented SCRFD multi-scale face detection (3 FPN strides: 8, 16, 32) with custom anchor decoding, NMS, and 5-point facial landmark extraction.</li>
+        <li data-i18n="p2_b2">Aligned detected faces via affine similarity transform (112×112) and extracted L2-normalized 512-d ArcFace embeddings matched against class galleries using cosine similarity.</li>
+        <li data-i18n="p2_b3">Engineered a FastAPI service with lifespan singleton model loading (CUDA/CPU fallback), per-class in-memory embedding cache, multi-image upload (including Apple HEIC fallback), and cross-frame student deduplication.</li>
+        <li data-i18n="p2_b4">Built CLI + REST enrollment pipelines (`/extract`, `/vision/identify`), OAuth2/JWT authentication with bcrypt, and a 7-table MySQL relational database.</li>
       </ul>
 
       <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">Power BI</span><span class="tag">BG/NBD</span>
-        <span class="tag">Gamma-Gamma</span><span class="tag">K-means</span><span class="tag">Pandas</span>
+        <span class="tag">Python</span><span class="tag">ONNX Runtime</span><span class="tag">SCRFD</span><span class="tag">ArcFace (ResNet-50)</span>
+        <span class="tag">OpenCV</span><span class="tag">FastAPI</span><span class="tag">MySQL</span><span class="tag">JWT / OAuth2</span>
       </div>
     </div>
   </article>
 
-  <!-- PROJECT 03 -->
-  <article class="project" id="proj-face">
+  <!-- PROJECT 03: SOLAR CELL ANOMALY DETECTION -->
+  <article class="project" id="proj-solar" data-cat="cv">
     <div class="project-index mono">03</div>
     <div class="project-main">
       <div class="project-top">
-        <h3 class="project-title">Face Recognition Attendance System</h3>
-        <span class="project-link project-link-static mono">backend system</span>
+        <div>
+          <span class="project-cat mono">Deep Learning · Unsupervised Computer Vision · 2026</span>
+          <h3 class="project-title">Solar Cell Anomaly Detection &amp; Segmentation</h3>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/dchwy/Solar-panel-anomaly-segmentation" target="_blank" rel="noopener" class="project-link mono">
+            GitHub Repo <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
+          </a>
+        </div>
       </div>
-      <p class="project-desc">
-        Hệ thống điểm danh tự động bằng nhận diện khuôn mặt cho lớp học: phát hiện khuôn mặt bằng SCRFD,
-        sinh embedding bằng ArcFace, đối sánh bằng cosine similarity, toàn bộ chạy qua REST API.
+      <p class="project-desc" data-i18n="p3_desc">
+        Comparative study and PyTorch implementation of 5 unsupervised visual anomaly detection and localization paradigms on monocrystalline and polycrystalline solar cell imagery.
       </p>
 
       <div class="project-stats">
-        <div class="stat"><span class="stat-val">512-d</span><span class="stat-label mono">embedding</span></div>
-        <div class="stat"><span class="stat-val">0.35</span><span class="stat-label mono">match threshold</span></div>
-        <div class="stat"><span class="stat-val">3</span><span class="stat-label mono">FPN strides</span></div>
-        <div class="stat"><span class="stat-val">ONNX</span><span class="stat-label mono">runtime</span></div>
+        <div class="stat"><span class="stat-val">0.999</span><span class="stat-label mono">AUROC (PatchCore · Poly)</span></div>
+        <div class="stat"><span class="stat-val">0.999</span><span class="stat-label mono">F1-Score (Poly)</span></div>
+        <div class="stat"><span class="stat-val">0.969</span><span class="stat-label mono">AUROC (SeMaKNN · Mono)</span></div>
+        <div class="stat"><span class="stat-val">5 Models</span><span class="stat-label mono">PyTorch Benchmark</span></div>
       </div>
 
       <ul class="project-points">
-        <li>Tự implement NMS và anchor decoding cho SCRFD — không phụ thuộc thư viện cấp cao.</li>
-        <li>Face alignment bằng SimilarityTransform để chuẩn hóa khuôn mặt về đúng chuẩn input của ArcFace.</li>
-        <li>FastAPI endpoint nhận diện ảnh lớp học, trả về danh sách sinh viên kèm độ tương đồng.</li>
-        <li>MySQL quản lý sinh viên, lớp học, embedding và lịch sử điểm danh; JWT bảo vệ toàn bộ API.</li>
+        <li data-i18n="p3_b1">Implemented 5 distinct architectures in PyTorch: Convolutional Autoencoder, GAN-based reconstruction, PaDiM (multivariate Gaussian on patch features), SeMaKNN, and PatchCoreLight.</li>
+        <li data-i18n="p3_b2">Built multi-scale feature extractors on pretrained Wide-ResNet50 and ResNet-18 backbones with k-Center Greedy coreset subsampling to compress memory banks while preserving anomaly sensitivity.</li>
+        <li data-i18n="p3_b3">Demonstrated that pretrained patch-embedding methods (PatchCore AUROC 0.999 on poly, SeMaKNN 0.969 on mono) substantially outperform reconstruction baselines (AE 0.805, GAN 0.668 on mono).</li>
       </ul>
 
       <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">OpenCV</span>
-        <span class="tag">SCRFD</span><span class="tag">ArcFace</span><span class="tag">ONNX</span><span class="tag">MySQL</span>
+        <span class="tag">PyTorch</span><span class="tag">torchvision</span><span class="tag">PatchCore</span><span class="tag">PaDiM</span>
+        <span class="tag">Autoencoder &amp; GAN</span><span class="tag">Wide-ResNet50</span><span class="tag">ResNet-18</span><span class="tag">Coreset Subsampling</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT 04: OLIST SELLER ANALYTICS -->
+  <article class="project" id="proj-olist" data-cat="analytics">
+    <div class="project-index mono">04</div>
+    <div class="project-main">
+      <div class="project-top">
+        <div>
+          <span class="project-cat mono">Predictive Analytics · Customer/Seller Behavior · 2026</span>
+          <h3 class="project-title">Seller Behavior Prediction &amp; Segmentation — Olist E-Commerce</h3>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/dchwy/marketing-driven-data-unlock" target="_blank" rel="noopener" class="project-link mono">
+            GitHub Repo <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="project-desc" data-i18n="p4_desc">
+        Probabilistic seller behavior modeling framework to forecast 60-day Seller Lifetime Value (LTV), rank churn/activity risk, and segment 2,248 marketplace sellers for targeted retention strategies.
+      </p>
+
+      <div class="project-stats">
+        <div class="stat"><span class="stat-val">0.906</span><span class="stat-label mono">PR-AUC (Activity)</span></div>
+        <div class="stat"><span class="stat-val">2.00×</span><span class="stat-label mono">Lift@10 Ranking</span></div>
+        <div class="stat"><span class="stat-val">2,248</span><span class="stat-label mono">Sellers Segmented</span></div>
+        <div class="stat"><span class="stat-val">0.530</span><span class="stat-label mono">Silhouette Score</span></div>
+      </div>
+
+      <ul class="project-points">
+        <li data-i18n="p4_b1">Fitted BG/NBD and Gamma-Gamma probabilistic models to predict repeat transaction frequency, active probability, and 60-day monetary value per seller.</li>
+        <li data-i18n="p4_b2">Achieved 0.906 PR-AUC and 2.00× Lift@10 over baseline when ranking high-value active sellers.</li>
+        <li data-i18n="p4_b3">Applied PowerTransformer and K-Means clustering (k=3, Silhouette 0.5295) with interactive 3D cluster profiling and an executive Power BI dashboard.</li>
+      </ul>
+
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">BG/NBD</span><span class="tag">Gamma-Gamma</span>
+        <span class="tag">K-Means</span><span class="tag">Scikit-learn</span><span class="tag">Power BI</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT 05: HANOI WEATHER FORECASTING & VN30 VOLATILITY -->
+  <article class="project" id="proj-forecast" data-cat="analytics">
+    <div class="project-index mono">05</div>
+    <div class="project-main">
+      <div class="project-top">
+        <div>
+          <span class="project-cat mono">Time-Series Forecasting · Ensemble ML · 2025–2026</span>
+          <h3 class="project-title">Hanoi Temperature Forecasting System &amp; VN30 Volatility Modeling</h3>
+        </div>
+        <div class="project-links">
+          <a href="https://huggingface.co/spaces/dchwy/hanoi-temperature-forecast" target="_blank" rel="noopener" class="project-link mono">
+            Live HF Space <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
+          </a>
+          <a href="https://github.com/dchwy/machine_learning_project" target="_blank" rel="noopener" class="project-link mono">
+            Weather Repo <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
+          </a>
+          <a href="https://github.com/dchwy/vn30-garch-volatility" target="_blank" rel="noopener" class="project-link mono">
+            VN30 GARCH <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L9 3M9 3H4M9 3v5"/></svg>
+          </a>
+        </div>
+      </div>
+      <p class="project-desc" data-i18n="p5_desc">
+        Multi-horizon daily &amp; hourly temperature forecasting system deployed on Hugging Face Spaces, alongside econometric volatility forecasting on Vietnam's VN30 equity index (2015–2026).
+      </p>
+
+      <div class="project-stats">
+        <div class="stat"><span class="stat-val">140+</span><span class="stat-label mono">Engineered Features</span></div>
+        <div class="stat"><span class="stat-val">5 Horizons</span><span class="stat-label mono">Multi-Step XGBoost</span></div>
+        <div class="stat"><span class="stat-val">Gradio</span><span class="stat-label mono">Live HF Deployment</span></div>
+        <div class="stat"><span class="stat-val">GARCH</span><span class="stat-label mono">VN30 (2015–2026)</span></div>
+      </div>
+
+      <ul class="project-points">
+        <li data-i18n="p5_b1">Engineered 142 daily and 120 hourly meteorological features (cyclical monsoon encodings, rolling statistics, lag interactions) and trained multi-horizon XGBoost regressors with overfitting diagnostics.</li>
+        <li data-i18n="p5_b2">Modeled conditional heteroskedasticity and market risk on VN30 index returns (2015–2026) using GARCH-family time-series models.</li>
+      </ul>
+
+      <div class="project-tags">
+        <span class="tag">XGBoost</span><span class="tag">Time Series</span><span class="tag">GARCH</span>
+        <span class="tag">Feature Engineering</span><span class="tag">Gradio</span><span class="tag">Hugging Face Spaces</span>
       </div>
     </div>
   </article>
@@ -216,82 +337,134 @@
 <!-- ============ SKILLS ============ -->
 <section class="section section-alt" id="skills">
   <div class="section-head">
-    <span class="eyebrow mono">// stack</span>
-    <h2 class="section-title">Kỹ năng</h2>
+    <span class="eyebrow mono">// technical stack</span>
+    <h2 class="section-title" data-i18n="skills_heading">Skills &amp; Toolkit</h2>
+    <p class="section-desc" data-i18n="skills_sub">Core competencies across Machine Learning, Deep Learning/Computer Vision, MLOps infrastructure, and quantitative analysis.</p>
   </div>
 
   <div class="skills-grid">
     <div class="skill-card">
-      <h3 class="skill-cat mono">programming &amp; data</h3>
-      <div class="skill-bars">
-        <div class="skill-bar"><span class="skill-name">Python</span><div class="bar"><div class="bar-fill" style="--w:92%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">SQL</span><div class="bar"><div class="bar-fill" style="--w:80%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">Pandas / NumPy</span><div class="bar"><div class="bar-fill" style="--w:90%"></div></div></div>
+      <div class="skill-card-head">
+        <h3 class="skill-cat mono">01 / Machine Learning &amp; Math</h3>
+        <span class="skill-badge mono">Core</span>
+      </div>
+      <p class="skill-summary">Tabular modeling, imbalanced classification (fraud/risk), probabilistic LTV, clustering, and multi-horizon forecasting.</p>
+      <div class="skill-pills">
+        <span class="pill strong">Scikit-learn</span>
+        <span class="pill strong">LightGBM</span>
+        <span class="pill strong">XGBoost</span>
+        <span class="pill">CatBoost</span>
+        <span class="pill strong">Optuna</span>
+        <span class="pill">BG/NBD &amp; Gamma-Gamma</span>
+        <span class="pill">GARCH Time Series</span>
+        <span class="pill">Threshold Calibration</span>
       </div>
     </div>
 
     <div class="skill-card">
-      <h3 class="skill-cat mono">machine learning</h3>
-      <div class="skill-bars">
-        <div class="skill-bar"><span class="skill-name">Scikit-learn</span><div class="bar"><div class="bar-fill" style="--w:88%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">XGBoost / LightGBM</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">Model evaluation</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></div>
+      <div class="skill-card-head">
+        <h3 class="skill-cat mono">02 / Deep Learning &amp; Vision</h3>
+        <span class="skill-badge mono">PyTorch &amp; ONNX</span>
+      </div>
+      <p class="skill-summary">Face detection, 5-point alignment, biometric verification (eKYC), and unsupervised visual anomaly segmentation.</p>
+      <div class="skill-pills">
+        <span class="pill strong">PyTorch</span>
+        <span class="pill">torchvision</span>
+        <span class="pill strong">ONNX Runtime</span>
+        <span class="pill strong">OpenCV</span>
+        <span class="pill strong">SCRFD &amp; ArcFace</span>
+        <span class="pill">PatchCore &amp; PaDiM</span>
+        <span class="pill">Autoencoder / GAN</span>
+        <span class="pill">ResNet / Wide-ResNet</span>
       </div>
     </div>
 
     <div class="skill-card">
-      <h3 class="skill-cat mono">mlops &amp; deployment</h3>
-      <div class="skill-bars">
-        <div class="skill-bar"><span class="skill-name">Docker</span><div class="bar"><div class="bar-fill" style="--w:78%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">MLflow / DVC</span><div class="bar"><div class="bar-fill" style="--w:75%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">CI/CD (GitHub Actions)</span><div class="bar"><div class="bar-fill" style="--w:72%"></div></div></div>
+      <div class="skill-card-head">
+        <h3 class="skill-cat mono">03 / MLOps &amp; Backend Serving</h3>
+        <span class="skill-badge mono">Production</span>
+      </div>
+      <p class="skill-summary">RESTful model serving, reproducible data/model pipelines, container orchestration, and drift observability.</p>
+      <div class="skill-pills">
+        <span class="pill strong">FastAPI</span>
+        <span class="pill strong">Docker</span>
+        <span class="pill strong">MLflow</span>
+        <span class="pill strong">DVC</span>
+        <span class="pill">GitHub Actions (CI/CT/CD)</span>
+        <span class="pill">Kubernetes (GKE)</span>
+        <span class="pill">Evidently AI</span>
+        <span class="pill">Prometheus &amp; Grafana</span>
       </div>
     </div>
 
     <div class="skill-card">
-      <h3 class="skill-cat mono">analytics &amp; bi</h3>
-      <div class="skill-bars">
-        <div class="skill-bar"><span class="skill-name">Power BI</span><div class="bar"><div class="bar-fill" style="--w:82%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">Excel</span><div class="bar"><div class="bar-fill" style="--w:85%"></div></div></div>
-        <div class="skill-bar"><span class="skill-name">Data visualization</span><div class="bar"><div class="bar-fill" style="--w:84%"></div></div></div>
+      <div class="skill-card-head">
+        <h3 class="skill-cat mono">04 / Data, BI &amp; Languages</h3>
+        <span class="skill-badge mono">Foundations</span>
+      </div>
+      <p class="skill-summary">Relational database design, SQL querying, executive dashboarding, and strong mathematical/English communication.</p>
+      <div class="skill-pills">
+        <span class="pill strong">Python (Pandas, NumPy)</span>
+        <span class="pill strong">SQL (MySQL)</span>
+        <span class="pill strong">Power BI</span>
+        <span class="pill">Streamlit &amp; Gradio</span>
+        <span class="pill">Git / GitHub / uv</span>
+        <span class="pill">Excel</span>
+        <span class="pill strong">English — IELTS 6.5</span>
       </div>
     </div>
-  </div>
-
-  <div class="skill-tools">
-    <span class="tool-label mono">also used:</span>
-    <span class="tool">FastAPI</span><span class="tool">OpenCV</span><span class="tool">ONNX Runtime</span>
-    <span class="tool">MySQL</span><span class="tool">Git/GitHub</span><span class="tool">Canva</span>
-    <span class="tool">Microsoft Office</span><span class="tool">Optuna</span><span class="tool">Streamlit</span>
   </div>
 </section>
 
-<!-- ============ ABOUT ============ -->
+<!-- ============ ABOUT & EDUCATION ============ -->
 <section class="section" id="about">
   <div class="about-grid">
     <div class="about-text">
-      <span class="eyebrow mono">// about</span>
-      <h2 class="section-title">Đỗ Công Huy</h2>
-      <p>
-        Sinh viên năm 3 ngành Data Science &amp; Business (DSEB) tại Đại học Kinh tế Quốc dân, Hà Nội.
-        GPA 3.87/4.0, đạt học bổng khuyến khích học tập học kỳ 2 và học kỳ 5.
+      <span class="eyebrow mono">// education &amp; background</span>
+      <h2 class="section-title">Do Cong Huy</h2>
+      <p data-i18n="about_p1">
+        I am a third-year student majoring in <strong>Data Science in Economics and Business (DSEB)</strong> at the <strong>National Economics University (NEU)</strong>, Ha Noi, maintaining a <strong>3.82 / 4.00 GPA</strong> and earning the university's Academic Excellence Scholarship in both my 2nd and 5th semesters.
       </p>
-      <p>
-        Quan tâm đến việc ứng dụng công nghệ dựa trên dữ liệu để cải thiện hệ thống và business intelligence —
-        không chỉ dừng lại ở việc huấn luyện mô hình, mà đưa mô hình đó vận hành ổn định trong thực tế.
+      <p data-i18n="about_p2">
+        My work bridges rigorous mathematical foundations (Probability &amp; Statistics, Linear Algebra, Optimization) with software engineering discipline — taking models beyond Jupyter notebooks into Dockerized FastAPI services with automated testing and drift monitoring.
       </p>
-      <div class="about-edu">
-        <div class="edu-row">
-          <span class="edu-school mono">National Economics University</span>
-          <span class="edu-time mono">2023 — nay</span>
+
+      <div class="about-edu-card">
+        <div class="edu-header">
+          <div>
+            <div class="edu-school">National Economics University (NEU)</div>
+            <div class="edu-degree">B.Sc. in Data Science in Economics and Business (DSEB)</div>
+          </div>
+          <span class="edu-time mono">2023 — Expected 2027</span>
         </div>
-        <div class="edu-detail">Data Science &amp; Business (DSEB) · Hà Nội</div>
+        <ul class="edu-list">
+          <li><strong>GPA:</strong> 3.82 / 4.00 &nbsp;·&nbsp; <strong>Honors:</strong> 2× Academic Excellence Scholarship (Semesters 2 &amp; 5)</li>
+          <li><strong>English Proficiency:</strong> IELTS 6.5</li>
+          <li><strong>Relevant Coursework:</strong> Machine Learning, Probability &amp; Statistics, Linear Algebra, Time Series Analysis, Database Systems</li>
+        </ul>
       </div>
     </div>
+
     <div class="about-stat-card">
-      <div class="about-stat"><span class="about-stat-num">3.87</span><span class="about-stat-label mono">/ 4.0 GPA</span></div>
-      <div class="about-stat"><span class="about-stat-num">3</span><span class="about-stat-label mono">major projects</span></div>
-      <div class="about-stat"><span class="about-stat-num">2×</span><span class="about-stat-label mono">academic scholarship</span></div>
+      <div class="about-stat">
+        <div>
+          <span class="about-stat-num">3.82</span>
+          <span class="about-stat-sub mono">/ 4.00</span>
+        </div>
+        <span class="about-stat-label mono">Cumulative GPA @ NEU</span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat-num">2×</span>
+        <span class="about-stat-label mono">Academic Scholarship</span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat-num">6.5</span>
+        <span class="about-stat-label mono">IELTS Academic</span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat-num">5+</span>
+        <span class="about-stat-label mono">End-to-End ML/CV Systems</span>
+      </div>
     </div>
   </div>
 </section>
@@ -299,17 +472,20 @@
 <!-- ============ CONTACT ============ -->
 <section class="section section-contact" id="contact">
   <div class="contact-inner">
-    <span class="eyebrow mono">// let's talk</span>
-    <h2 class="contact-title">Đang tìm cơ hội thực tập<br>Data Science / ML Engineering</h2>
-    <p class="contact-desc">Sẵn sàng trao đổi về vị trí thực tập, dự án hợp tác, hoặc đơn giản là nói chuyện về MLOps.</p>
+    <span class="eyebrow mono">// let's connect</span>
+    <h2 class="contact-title" data-i18n="contact_title">Seeking AI / ML Engineer<br>&amp; Data Science Internship</h2>
+    <p class="contact-desc" data-i18n="contact_desc">Available for full-time internship programs. Feel free to reach out regarding AI/ML engineering roles, research collaborations, or technical discussions.</p>
     <div class="contact-actions">
-      <a href="mailto:dchuy.neu@gmail.com" class="btn btn-primary">dchuy.neu@gmail.com</a>
+      <a href="mailto:huydocong1502@gmail.com" class="btn btn-primary">huydocong1502@gmail.com</a>
       <a href="tel:0868589541" class="btn btn-ghost">0868 589 541</a>
+      <a href="assets/Do_Cong_Huy_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Resume (PDF)</a>
     </div>
-    <div class="contact-links">
-      <a href="https://github.com/dchwy" target="_blank" rel="noopener">GitHub</a>
+    <div class="contact-links mono">
+      <a href="https://github.com/dchwy" target="_blank" rel="noopener">github.com/dchwy</a>
       <span class="contact-sep">·</span>
-      <a href="/assets/Do_Cong_Huy_CV.pdf" download>Tải CV PDF</a>
+      <a href="https://huggingface.co/spaces/dchwy/hanoi-temperature-forecast" target="_blank" rel="noopener">Hugging Face Demo</a>
+      <span class="contact-sep">·</span>
+      <a href="assets/Do_Cong_Huy_CV.pdf" download>Download CV</a>
     </div>
   </div>
 </section>
@@ -317,8 +493,8 @@
 </main>
 
 <footer class="footer">
-  <span class="mono">© 2026 Do Cong Huy</span>
-  <span class="mono footer-dim">last updated: 2026-06-19</span>
+  <span class="mono">© 2026 Do Cong Huy · Built for GitHub Pages</span>
+  <span class="mono footer-dim">NEU DSEB · AI/ML Portfolio</span>
 </footer>
 
 <script src="script.js"></script>
