@@ -7,14 +7,12 @@
 <meta name="description" content="Do Cong Huy — Data Science student at NEU (GPA 3.82/4.0). Machine Learning, Computer Vision, MLOps, and Predictive Analytics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="grid-overlay" aria-hidden="true"></div>
-<div class="glow-orb orb-1" aria-hidden="true"></div>
-<div class="glow-orb orb-2" aria-hidden="true"></div>
+<a class="skip-link" href="#projects" data-i18n="skip">Skip to projects</a>
 
 <!-- ============ NAV ============ -->
 <nav class="nav" id="nav">
@@ -35,7 +33,7 @@
         <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
       </button>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <button class="nav-toggle" id="navToggle" aria-controls="navMobile" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -54,14 +52,14 @@
     <div class="hero-badges">
       <div class="hero-status">
         <span class="status-dot" aria-hidden="true"></span>
-        <span class="mono" data-i18n="hero_status">status: open_to_ai_ml_internship</span>
+        <span class="mono" data-i18n="hero_status">Open to AI / ML internships</span>
       </div>
-      <span class="hero-role-badge mono">AI/ML Engineer · Data Science</span>
+      <span class="hero-role-badge mono">HANOI, VIETNAM</span>
     </div>
 
     <h1 class="hero-title">
       <span class="hero-line">Do Cong Huy</span>
-      <span class="hero-line hero-sub" data-i18n="hero_sub">building reliable ML, Computer Vision &amp; MLOps systems from notebook to production.</span>
+      <span class="hero-line hero-sub" data-i18n="hero_sub">Machine learning &amp; data science</span>
     </h1>
 
     <p class="hero-desc" data-i18n="hero_desc">
@@ -72,7 +70,7 @@
       <a href="#projects" class="btn btn-primary"><span data-i18n="hero_btn_projects">Explore Projects</span> <span aria-hidden="true">→</span></a>
       <a href="assets/Do_Cong_Huy_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-        <span data-i18n="hero_btn_cv">Download CV (MIT Format PDF)</span>
+        <span data-i18n="hero_btn_cv">View CV (PDF)</span>
       </a>
     </div>
 
@@ -96,39 +94,55 @@
     </div>
   </div>
 
-  <div class="hero-panel" aria-label="Key metrics summary">
-    <div class="panel-head">
-      <span class="panel-dot red"></span><span class="panel-dot yellow"></span><span class="panel-dot green"></span>
-      <span class="panel-title mono">dchwy@neu:~/telemetry.json</span>
+  <aside class="hero-panel">
+    <p class="panel-kicker mono" data-i18n="panel_kicker">FROM DATA TO DECISIONS</p>
+    <svg class="pipeline" viewBox="0 0 420 218" aria-hidden="true" focusable="false">
+      <defs>
+        <pattern id="plot-grid" width="21" height="21" patternUnits="userSpaceOnUse">
+          <path d="M21 0H0V21" fill="none" stroke="#43607a" stroke-opacity=".4"/>
+        </pattern>
+      </defs>
+      <rect width="420" height="218" fill="url(#plot-grid)"/>
+      <g fill="none" stroke="#7cc9fb" stroke-width="1.5">
+        <path d="M43 57L106 93M43 109L106 109M43 161L106 125M106 109H175M233 109H300M300 109L372 57M300 109H372M300 109L372 161"/>
+        <rect x="175" y="80" width="58" height="58" rx="9" fill="#1c3d56"/>
+        <rect x="187" y="92" width="34" height="34" rx="5"/>
+        <path d="M195 113l7-8 5 5 6-7"/>
+      </g>
+      <g fill="#c8f1ff">
+        <circle cx="43" cy="57" r="5"/><circle cx="43" cy="109" r="5"/><circle cx="43" cy="161" r="5"/>
+        <circle cx="106" cy="109" r="7"/><circle cx="300" cy="109" r="7"/>
+      </g>
+      <g fill="#9ee9ce">
+        <rect x="367" y="52" width="10" height="10" rx="2"/><rect x="367" y="104" width="10" height="10" rx="2"/><rect x="367" y="156" width="10" height="10" rx="2"/>
+      </g>
+    </svg>
+    <div class="pipeline-labels mono">
+      <span data-i18n="pipeline_data">Data</span><span data-i18n="pipeline_model">Model</span><span data-i18n="pipeline_output">Output</span>
     </div>
-    <div class="panel-body mono">
-      <div class="panel-row"><span class="panel-key">university</span><span class="panel-val">NEU <span class="panel-dim">(DSEB)</span></span></div>
-      <div class="panel-row"><span class="panel-key">cumulative_gpa</span><span class="panel-val count-up" data-from="3.0" data-to="3.82" data-dec="2" data-suffix="/4.0">3.82<span class="panel-dim">/4.0</span></span></div>
-      <div class="panel-row"><span class="panel-key">english_ielts</span><span class="panel-val count-up" data-from="4.0" data-to="6.5" data-dec="1">6.5</span></div>
-      <div class="panel-row"><span class="panel-key">fraud_pr_auc</span><span class="panel-val ok">0.852</span></div>
-      <div class="panel-row"><span class="panel-key">fraud_roc_auc</span><span class="panel-val ok">0.994</span></div>
-      <div class="panel-row"><span class="panel-key">seller_ltv_pr_auc</span><span class="panel-val ok">0.906</span></div>
-      <div class="panel-row"><span class="panel-key">seller_lift_at_10</span><span class="panel-val ok">2.00×</span></div>
-      <div class="panel-row blink"><span class="panel-key">status</span><span class="panel-val ok">READY_FOR_DEPLOY</span></div>
-    </div>
-  </div>
+    <dl class="hero-metrics">
+      <div><dt>GPA / 4.0</dt><dd>3.82</dd></div>
+      <div><dt>IELTS</dt><dd>6.5</dd></div>
+      <div><dt data-i18n="panel_projects">Projects</dt><dd>04</dd></div>
+    </dl>
+  </aside>
 </header>
 
 <main>
 
 <!-- ============ PROJECTS ============ -->
-<section class="section" id="projects">
+<section class="section" id="projects" tabindex="-1">
   <div class="section-head-row">
     <div class="section-head">
       <span class="eyebrow mono">// 04 technical case studies</span>
       <h2 class="section-title" data-i18n="proj_heading">Featured Projects</h2>
       <p class="section-desc" data-i18n="proj_sub">End-to-end systems spanning production MLOps, Computer Vision (eKYC face recognition), and probabilistic behavior &amp; time-series modeling.</p>
     </div>
-    <div class="filter-tabs mono" role="tablist" aria-label="Filter projects">
-      <button class="filter-btn active" data-filter="all">All (4)</button>
-      <button class="filter-btn" data-filter="mlops">MLOps &amp; FinTech</button>
-      <button class="filter-btn" data-filter="cv">Computer Vision</button>
-      <button class="filter-btn" data-filter="analytics">Forecasting &amp; LTV</button>
+    <div class="filter-tabs mono" role="group" aria-label="Filter projects">
+      <button class="filter-btn active" aria-pressed="true" data-filter="all" data-i18n="filter_all">All (4)</button>
+      <button class="filter-btn" aria-pressed="false" data-filter="mlops" data-i18n="filter_mlops">MLOps &amp; FinTech</button>
+      <button class="filter-btn" aria-pressed="false" data-filter="cv" data-i18n="filter_cv">Computer Vision</button>
+      <button class="filter-btn" aria-pressed="false" data-filter="analytics" data-i18n="filter_analytics">Forecasting &amp; LTV</button>
     </div>
   </div>
 
@@ -158,11 +172,14 @@
         <div class="stat"><span class="stat-val">0.752</span><span class="stat-label mono">Recall</span></div>
       </div>
 
-      <ul class="project-points">
+      <details class="project-details">
+        <summary data-i18n="details">Technical details</summary>
+        <ul class="project-points">
         <li data-i18n="p1_b1">Built the data preprocessing and behavioral feature engineering pipeline (transactional velocity, ratios, temporal features) integrated into a reproducible DVC workflow with a strict train/validation/test split.</li>
         <li data-i18n="p1_b2">Implemented model selection and training across Logistic Regression, XGBoost, LightGBM, and CatBoost, addressing severe class imbalance with SMOTE and tracking runs in Dockerized MLflow.</li>
         <li data-i18n="p1_b3">Engineered an Optuna hyperparameter tuning pipeline and threshold-based inference flow to optimize precision–recall trade-offs (0.852 PR-AUC, 0.994 ROC-AUC with LightGBM).</li>
       </ul>
+      </details>
 
       <div class="project-tags">
         <span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">XGBoost</span><span class="tag">Optuna</span>
@@ -195,11 +212,14 @@
         <div class="stat"><span class="stat-val">7 tables</span><span class="stat-label mono">MySQL Schema</span></div>
       </div>
 
-      <ul class="project-points">
+      <details class="project-details">
+        <summary data-i18n="details">Technical details</summary>
+        <ul class="project-points">
         <li data-i18n="p2_b1">Co-developed the face recognition pipeline using SCRFD (multi-scale detection and 5-point facial landmark alignment) and ArcFace (ResNet-50 ONNX) to extract L2-normalized 512-d embeddings.</li>
         <li data-i18n="p2_b2">Implemented embedding extraction scripts and cosine-similarity identity matching against per-class enrolled student galleries with a configurable similarity threshold.</li>
         <li data-i18n="p2_b3">Designed and built the 7-table MySQL relational database schema managing users, teachers, classes, enrollments, student embeddings, and attendance records.</li>
       </ul>
+      </details>
 
       <div class="project-tags">
         <span class="tag">Python</span><span class="tag">ONNX Runtime</span><span class="tag">SCRFD</span><span class="tag">ArcFace (ResNet-50)</span>
@@ -234,11 +254,14 @@
         <div class="stat"><span class="stat-val">0.530</span><span class="stat-label mono">Silhouette Score</span></div>
       </div>
 
-      <ul class="project-points">
+      <details class="project-details">
+        <summary data-i18n="details">Technical details</summary>
+        <ul class="project-points">
         <li data-i18n="p4_b1">Fitted BG/NBD and Gamma-Gamma probabilistic models to predict repeat transaction frequency, active probability, and 60-day monetary value per seller.</li>
         <li data-i18n="p4_b2">Achieved 0.906 PR-AUC and 2.00× Lift@10 over baseline when ranking high-value active sellers.</li>
         <li data-i18n="p4_b3">Applied PowerTransformer and K-Means clustering (k=3, Silhouette 0.5295) with interactive 3D cluster profiling and an executive Power BI dashboard.</li>
       </ul>
+      </details>
 
       <div class="project-tags">
         <span class="tag">Python</span><span class="tag">BG/NBD</span><span class="tag">Gamma-Gamma</span>
@@ -279,10 +302,13 @@
         <div class="stat"><span class="stat-val">GARCH</span><span class="stat-label mono">VN30 (2015–2026)</span></div>
       </div>
 
-      <ul class="project-points">
+      <details class="project-details">
+        <summary data-i18n="details">Technical details</summary>
+        <ul class="project-points">
         <li data-i18n="p5_b1">Engineered 142 daily and 120 hourly meteorological features (cyclical monsoon encodings, rolling statistics, lag interactions) and trained multi-horizon XGBoost regressors with overfitting diagnostics.</li>
         <li data-i18n="p5_b2">Modeled conditional heteroskedasticity and market risk on VN30 index returns (2015–2026) using GARCH-family time-series models.</li>
       </ul>
+      </details>
 
       <div class="project-tags">
         <span class="tag">XGBoost</span><span class="tag">Time Series</span><span class="tag">GARCH</span>
@@ -293,7 +319,7 @@
 </section>
 
 <!-- ============ SKILLS ============ -->
-<section class="section section-alt" id="skills">
+<section class="section section-alt" id="skills" tabindex="-1">
   <div class="section-head">
     <span class="eyebrow mono">// technical stack</span>
     <h2 class="section-title" data-i18n="skills_heading">Skills &amp; Toolkit</h2>
@@ -371,7 +397,7 @@
 </section>
 
 <!-- ============ ABOUT & EDUCATION ============ -->
-<section class="section" id="about">
+<section class="section" id="about" tabindex="-1">
   <div class="about-grid">
     <div class="about-text">
       <span class="eyebrow mono">// education &amp; background</span>
@@ -394,7 +420,7 @@
         <ul class="edu-list">
           <li><strong>GPA:</strong> 3.82 / 4.00 &nbsp;·&nbsp; <strong>Honors:</strong> 2× Academic Excellence Scholarship (Semesters 2 &amp; 5)</li>
           <li><strong>English Proficiency:</strong> IELTS 6.5</li>
-          <li><strong>Relevant Coursework:</strong> Machine Learning, Probability &amp; Statistics, Linear Algebra, Time Series Analysis, Database Systems</li>
+          <li><strong>Relevant Coursework:</strong> Machine Learning, Reinforcement Learning, Probability &amp; Statistics, Linear Algebra, Time Series Analysis, Database Systems</li>
         </ul>
       </div>
     </div>
@@ -424,11 +450,11 @@
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section class="section section-contact" id="contact">
+<section class="section section-contact" id="contact" tabindex="-1">
   <div class="contact-inner">
     <span class="eyebrow mono">// let's connect</span>
     <h2 class="contact-title" data-i18n="contact_title">Seeking AI / ML Engineer<br>&amp; Data Science Internship</h2>
-    <p class="contact-desc" data-i18n="contact_desc">Available for full-time internship programs. Feel free to reach out regarding AI/ML engineering roles, research collaborations, or technical discussions.</p>
+    <p class="contact-desc" data-i18n="contact_desc">Open to internship opportunities in AI/ML engineering and data science. Feel free to reach out to discuss a role or project.</p>
     <div class="contact-actions">
       <a href="mailto:dchuy.neu@gmail.com" class="btn btn-primary">dchuy.neu@gmail.com</a>
       <a href="tel:0868589541" class="btn btn-ghost">0868 589 541</a>
